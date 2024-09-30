@@ -5,11 +5,14 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     public Rigidbody rb;
+    public GameObject gameManeger;
+    private GameManager gameManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        float moveSpeed = 2.0f;
+        
+        float moveSpeed = 10.0f;
 
         rb.velocity = new Vector3(0, 0, moveSpeed);
         Destroy(gameObject, 5);
@@ -27,6 +30,7 @@ public class BulletScript : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(this.gameObject);
+            GameManager.score += 1;
         }
     }
 }
