@@ -3,7 +3,11 @@ guid: 01a7a894f18536546b290528ff607984
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemy: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - itemPrefab: {fileID: 5066247950520554522, guid: cb0e0c1a189846c4ea46f72f7cee563a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

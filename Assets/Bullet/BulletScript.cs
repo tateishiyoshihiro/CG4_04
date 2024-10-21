@@ -7,6 +7,8 @@ public class BulletScript : MonoBehaviour
     public Rigidbody rb;
     public GameObject gameManeger;
     private GameManager gameManagerScript;
+    //ƒAƒCƒeƒ€’Ç‰Á
+    public GameObject itemPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class BulletScript : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             GameManager.score += 1;
+            
         }
     }
 }

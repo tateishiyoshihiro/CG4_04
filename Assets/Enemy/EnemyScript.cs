@@ -12,6 +12,7 @@ public class EnemyScript : MonoBehaviour
 
     private GameObject gameManager;
     private GameManager gameManagerScript;
+    
     // Start is called before the first frame update
     void Start()
     {

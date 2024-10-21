@@ -577,6 +577,7 @@ MonoBehaviour:
   enemy: {fileID: 7179535280923768601, guid: 5418df6fe5d2afe43a66601b0d6005f2, type: 3}
   gameOverText: {fileID: 1191839469}
   scoreText: {fileID: 457283767}
+  itemPrefab: {fileID: 0}
 --- !u!1 &931516549
 GameObject:
   m_ObjectHideFlags: 0

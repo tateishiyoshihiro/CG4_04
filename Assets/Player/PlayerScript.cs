@@ -70,6 +70,15 @@ public class PlayerScript : MonoBehaviour
                 animator.SetBool("Move", true);
             }
         }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            if (transform.position.x < 6.5)
+            {
+                rb.velocity = new Vector3(moveSpeed, 0, 0);
+                transform.rotation = Quaternion.Euler(0, 90, 0);
+                animator.SetBool("Move", true);
+            }
+        }
         else
         {
             rb.velocity = new Vector3(0, 0, 0);

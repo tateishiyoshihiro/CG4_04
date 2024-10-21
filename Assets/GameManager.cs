@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public static int score = 0;
 
+    //アイテム追加
+    public GameObject itemPrefab;
+
     public bool IsGameOver()
     {
         return gameOverFlag;
@@ -42,6 +45,8 @@ public class GameManager : MonoBehaviour
         {
             float x = Random.Range(-3.0f, 3.0f);
             Instantiate(enemy, new Vector3(x, 0, 15), Quaternion.identity);
+            //アイテム出現
+           // Instantiate(itemPrefab, transform.position, Quaternion.identity);
         }
     }
 
