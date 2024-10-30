@@ -5,6 +5,7 @@ using UnityEngine;
 public class Launcher : MonoBehaviour
 {
     float timeCount = 0;//経過時間
+    float shotAngle = 0;//発射角度
     [SerializeField] GameObject shotBullet;//発射する弾
 
     // Start is called before the first frame update
@@ -20,15 +21,24 @@ public class Launcher : MonoBehaviour
         timeCount += Time.deltaTime;
 
         //1秒を超えているか
-        if (timeCount > 1.0f) 
+        if (timeCount > 0.1f) 
         {
             timeCount = 0;//再発射のために時間をリセット
+
+            shotAngle += 10;
 
             //GameObjectを新たに生成する
             //第一引数：生成するGameObject
             //第二引数：生成する座標
             //第三引数：生成する角度
-            Instantiate(shotBullet,transform.position,Quaternion.identity);
+            //戻り値　：生成したGameObject
+           GameObject createObject =　Instantiate(shotBullet,transform.position,Quaternion.identity);
+
+            //生成したGameObjectに設定されている、Bulletスクリプトを取得する
+            EnemyBullt enemyBullt=createObject.GetComponent<EnemyBullt>();
+
+            //BulletスクリプトのInitを呼び出す
+            enemyBullt.init(shotAngle, 3);
         }
 
     }

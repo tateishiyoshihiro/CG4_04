@@ -81,6 +81,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: -302737145673883372}
+    - targetCorrespondingSourceObject: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
       insertIndex: -1
       addedObject: {fileID: -2118383129987086201}
     - targetCorrespondingSourceObject: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
@@ -97,6 +100,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
   m_PrefabInstance: {fileID: 7179535280923865113}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-302737145673883372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179535280923768601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c44410abb99a9439a902dca5f8607b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotBullet: {fileID: 9122077463437633730, guid: 10593142e548f51409a9e29557ec6e06, type: 3}
 --- !u!114 &-2118383129987086201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   animator: {fileID: 7179535280914367865}
+  bullet: {fileID: 0}
 --- !u!136 &-8934370360060030559
 CapsuleCollider:
   m_ObjectHideFlags: 0

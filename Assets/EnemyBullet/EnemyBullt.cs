@@ -29,6 +29,14 @@ public class EnemyBullt : MonoBehaviour
         transform.position += velocity * Time.deltaTime;
     }
 
+    //’Ç‰Á
+    //Šp“x‚Æ‘¬“x‚ğİ’è‚·‚éŠÖ”
+    public void init(float input_angle,float input_speed)
+    {
+        angle = input_angle;
+        speed = input_speed;
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         
