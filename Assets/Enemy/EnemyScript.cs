@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
 {
     public Rigidbody rb;
     public Animator animator;
+    public GameObject bullet;
 
     float moveSpeed = 3.0f;
 
