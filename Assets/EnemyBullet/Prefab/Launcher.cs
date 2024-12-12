@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
+    private GameManager gameManagerScript;
     float timeCount = 0;//Œo‰ßŽžŠÔ
     float shotAngle = 0;//”­ŽËŠp“x
     [SerializeField] GameObject shotBullet;//”­ŽË‚·‚é’e

@@ -137,5 +137,11 @@ public class PlayerScript : MonoBehaviour
         {
             gameManagerScript.GameOverStart();
         }
+        if (other.gameObject.tag == "EnemyBullet")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+            gameManagerScript.GameOverStart();
+        }
     }
 }

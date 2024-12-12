@@ -22,7 +22,7 @@ public class EnemyScript : MonoBehaviour
         //スクリプトを獲得
         gameManagerScript = gameManager.GetComponent<GameManager>();
 
-        Destroy(gameObject, 15);
+        Destroy(gameObject, 2);
         transform.rotation = Quaternion.Euler(0, 180, 0);
 
         //乱数で左右に
@@ -44,17 +44,17 @@ public class EnemyScript : MonoBehaviour
         {
             return;
         }
-        Vector3 velocity = new Vector3(0, 0, moveSpeed * Time.deltaTime);
-        transform.position += transform.rotation * velocity;
+        //Vector3 velocity = new Vector3(0, 0, moveSpeed * Time.deltaTime);
+        //transform.position += transform.rotation * velocity;
 
         //左右で反転
         if (transform.position.x > 4)
         {
-            transform.rotation = Quaternion.Euler(0, 180 + 40, 0);
+            transform.rotation = Quaternion.Euler(0, 180 + 4, 0);
         }
         if (transform.position.x < -4)
         {
-            transform.rotation = Quaternion.Euler(0, 180 - 40, 0);
+            transform.rotation = Quaternion.Euler(0, 180 - 4, 0);
         }
     }
 }

@@ -27,6 +27,7 @@ public class EnemyBullt : MonoBehaviour
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
+        
     }
 
     //’Ç‰Á
@@ -37,8 +38,4 @@ public class EnemyBullt : MonoBehaviour
         speed = input_speed;
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        
-    }
 }

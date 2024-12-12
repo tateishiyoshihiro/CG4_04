@@ -31,7 +31,6 @@ public class BulletScript : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             GameManager.score += 1;
-            
         }
     }
 }
